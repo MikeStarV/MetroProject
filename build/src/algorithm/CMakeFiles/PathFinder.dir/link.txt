@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPathFinder.a CMakeFiles/PathFinder.dir/pathfinder.cpp.o
+/usr/bin/ranlib libPathFinder.a

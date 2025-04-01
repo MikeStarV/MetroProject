@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMetroModel.a CMakeFiles/MetroModel.dir/station.cpp.o
+/usr/bin/ranlib libMetroModel.a

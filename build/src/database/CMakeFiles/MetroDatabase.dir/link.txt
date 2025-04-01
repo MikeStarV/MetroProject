@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMetroDatabase.a CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.o
+/usr/bin/ranlib libMetroDatabase.a

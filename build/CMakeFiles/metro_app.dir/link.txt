@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/metro_app.dir/main.cpp.o -o metro_app  src/model/libMetroModel.a src/database/libMetroDatabase.a src/algorithm/libPathFinder.a /usr/lib/x86_64-linux-gnu/libsqlite3.so src/model/libMetroModel.a 
