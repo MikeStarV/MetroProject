@@ -1,4 +1,4 @@
-# Install script for directory: /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/database
+# Install script for directory: /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/database
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

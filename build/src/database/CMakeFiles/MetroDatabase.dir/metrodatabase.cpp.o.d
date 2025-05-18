@@ -1,7 +1,7 @@
 src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.o: \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/database/metrodatabase.cpp \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/database/metrodatabase.cpp \
  /usr/include/stdc-predef.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/database/../../include/database/metrodatabase.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/database/../../include/database/metrodatabase.h \
  /usr/include/sqlite3.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -48,7 +48,7 @@ src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.o: \
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/database/../../include/database/../model/station.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/database/../../include/database/../model/station.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \

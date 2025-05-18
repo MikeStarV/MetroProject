@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/model/station.cpp" "src/model/CMakeFiles/MetroModel.dir/station.cpp.o" "gcc" "src/model/CMakeFiles/MetroModel.dir/station.cpp.o.d"
+  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/station.cpp" "src/model/CMakeFiles/MetroModel.dir/station.cpp.o" "gcc" "src/model/CMakeFiles/MetroModel.dir/station.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/algorithm/pathfinder.cpp" "src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o" "gcc" "src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o.d"
+  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/pathfinder.cpp" "src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o" "gcc" "src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,7 +1,7 @@
 src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o: \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/algorithm/pathfinder.cpp \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/pathfinder.cpp \
  /usr/include/stdc-predef.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/algorithm/../../include/algorithm/pathfinder.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/../../include/algorithm/pathfinder.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -114,7 +114,7 @@ src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/algorithm/../../include/algorithm/../model/station.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/../../include/algorithm/../model/station.h \
  /usr/include/c++/13/queue /usr/include/c++/13/deque \
  /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
  /usr/include/c++/13/bits/stl_heap.h /usr/include/c++/13/bits/stl_queue.h \

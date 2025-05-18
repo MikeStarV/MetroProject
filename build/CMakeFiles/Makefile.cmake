@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/CMakeLists.txt"
+  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/algorithm/CMakeLists.txt"
-  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/database/CMakeLists.txt"
-  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/model/CMakeLists.txt"
+  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/CMakeLists.txt"
+  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/database/CMakeLists.txt"
+  "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"

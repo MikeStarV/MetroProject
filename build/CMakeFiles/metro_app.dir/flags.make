@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/model -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/database -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/algorithm
+CXX_INCLUDES = -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/model -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/database -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/algorithm
 
 CXX_FLAGS = -std=gnu++11
 

@@ -1,7 +1,7 @@
 src/model/CMakeFiles/MetroModel.dir/station.cpp.o: \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/model/station.cpp \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/station.cpp \
  /usr/include/stdc-predef.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/src/model/../../include/model/station.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/../../include/model/station.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

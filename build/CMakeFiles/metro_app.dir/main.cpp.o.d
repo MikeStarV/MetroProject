@@ -1,5 +1,5 @@
 CMakeFiles/metro_app.dir/main.cpp.o: \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/main.cpp \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -148,10 +148,15 @@ CMakeFiles/metro_app.dir/main.cpp.o: \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/database/metrodatabase.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/database/metrodatabase.h \
  /usr/include/sqlite3.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/database/../model/station.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/model/station.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/algorithm/pathfinder.h \
- /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/include/algorithm/../model/station.h
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/database/../model/station.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/model/station.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/algorithm/pathfinder.h \
+ /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/algorithm/../model/station.h

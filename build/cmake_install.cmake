@@ -1,4 +1,4 @@
-# Install script for directory: /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project
+# Install script for directory: /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/src/model/cmake_install.cmake")
-  include("/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/src/database/cmake_install.cmake")
-  include("/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/src/algorithm/cmake_install.cmake")
+  include("/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model/cmake_install.cmake")
+  include("/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/database/cmake_install.cmake")
+  include("/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

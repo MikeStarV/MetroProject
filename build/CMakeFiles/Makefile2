@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project
+CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build
+CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -136,14 +136,14 @@ CMakeFiles/metro_app.dir/all: src/database/CMakeFiles/MetroDatabase.dir/all
 CMakeFiles/metro_app.dir/all: src/algorithm/CMakeFiles/PathFinder.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles --progress-num=7,8 "Built target metro_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=7,8 "Built target metro_app"
 .PHONY : CMakeFiles/metro_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/metro_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/metro_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/metro_app.dir/rule
 
 # Convenience name for target.
@@ -162,14 +162,14 @@ CMakeFiles/metro_app.dir/clean:
 src/model/CMakeFiles/MetroModel.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/model/CMakeFiles/MetroModel.dir/build.make src/model/CMakeFiles/MetroModel.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/model/CMakeFiles/MetroModel.dir/build.make src/model/CMakeFiles/MetroModel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles --progress-num=3,4 "Built target MetroModel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=3,4 "Built target MetroModel"
 .PHONY : src/model/CMakeFiles/MetroModel.dir/all
 
 # Build rule for subdir invocation for target.
 src/model/CMakeFiles/MetroModel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/model/CMakeFiles/MetroModel.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
 .PHONY : src/model/CMakeFiles/MetroModel.dir/rule
 
 # Convenience name for target.
@@ -188,14 +188,14 @@ src/model/CMakeFiles/MetroModel.dir/clean:
 src/database/CMakeFiles/MetroDatabase.dir/all: src/model/CMakeFiles/MetroModel.dir/all
 	$(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles --progress-num=1,2 "Built target MetroDatabase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=1,2 "Built target MetroDatabase"
 .PHONY : src/database/CMakeFiles/MetroDatabase.dir/all
 
 # Build rule for subdir invocation for target.
 src/database/CMakeFiles/MetroDatabase.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/CMakeFiles/MetroDatabase.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
 .PHONY : src/database/CMakeFiles/MetroDatabase.dir/rule
 
 # Convenience name for target.
@@ -214,14 +214,14 @@ src/database/CMakeFiles/MetroDatabase.dir/clean:
 src/algorithm/CMakeFiles/PathFinder.dir/all: src/model/CMakeFiles/MetroModel.dir/all
 	$(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles --progress-num=5,6 "Built target PathFinder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=5,6 "Built target PathFinder"
 .PHONY : src/algorithm/CMakeFiles/PathFinder.dir/all
 
 # Build rule for subdir invocation for target.
 src/algorithm/CMakeFiles/PathFinder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/CMakeFiles/PathFinder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
 .PHONY : src/algorithm/CMakeFiles/PathFinder.dir/rule
 
 # Convenience name for target.

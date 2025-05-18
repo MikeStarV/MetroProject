@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project
+CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build
+CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/src/database//CMakeFiles/progress.marks
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build/CMakeFiles 0
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/database//CMakeFiles/progress.marks
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/clean
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/preinstall
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/preinstall
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/database/CMakeFiles/MetroDatabase.dir/rule:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/CMakeFiles/MetroDatabase.dir/rule
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/database/CMakeFiles/MetroDatabase.dir/rule
 .PHONY : src/database/CMakeFiles/MetroDatabase.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ MetroDatabase: src/database/CMakeFiles/MetroDatabase.dir/rule
 
 # fast build rule for target.
 MetroDatabase/fast:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/build
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/build
 .PHONY : MetroDatabase/fast
 
 metrodatabase.o: metrodatabase.cpp.o
@@ -135,7 +135,7 @@ metrodatabase.o: metrodatabase.cpp.o
 
 # target to build an object file
 metrodatabase.cpp.o:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.o
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.o
 .PHONY : metrodatabase.cpp.o
 
 metrodatabase.i: metrodatabase.cpp.i
@@ -143,7 +143,7 @@ metrodatabase.i: metrodatabase.cpp.i
 
 # target to preprocess a source file
 metrodatabase.cpp.i:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.i
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.i
 .PHONY : metrodatabase.cpp.i
 
 metrodatabase.s: metrodatabase.cpp.s
@@ -151,7 +151,7 @@ metrodatabase.s: metrodatabase.cpp.s
 
 # target to generate assembly for a file
 metrodatabase.cpp.s:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.s
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/database/CMakeFiles/MetroDatabase.dir/build.make src/database/CMakeFiles/MetroDatabase.dir/metrodatabase.cpp.s
 .PHONY : metrodatabase.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
