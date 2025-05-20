@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
+CMAKE_SOURCE_DIR = /home/mikestarikov/MetroProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build
+CMAKE_BINARY_DIR = /home/mikestarikov/MetroProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikestarikov/MetroProject/build/CMakeFiles /home/mikestarikov/MetroProject/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikestarikov/MetroProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,29 +168,29 @@ PathFinder/fast:
 	$(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/build
 .PHONY : PathFinder/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+mainUi.o: mainUi.cpp.o
+.PHONY : mainUi.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/main.cpp.o
-.PHONY : main.cpp.o
+mainUi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/mainUi.cpp.o
+.PHONY : mainUi.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+mainUi.i: mainUi.cpp.i
+.PHONY : mainUi.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/main.cpp.i
-.PHONY : main.cpp.i
+mainUi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/mainUi.cpp.i
+.PHONY : mainUi.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+mainUi.s: mainUi.cpp.s
+.PHONY : mainUi.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/main.cpp.s
-.PHONY : main.cpp.s
+mainUi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metro_app.dir/build.make CMakeFiles/metro_app.dir/mainUi.cpp.s
+.PHONY : mainUi.cpp.s
 
 # Help Target
 help:
@@ -204,9 +204,9 @@ help:
 	@echo "... MetroModel"
 	@echo "... PathFinder"
 	@echo "... metro_app"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mainUi.o"
+	@echo "... mainUi.i"
+	@echo "... mainUi.s"
 .PHONY : help
 
 

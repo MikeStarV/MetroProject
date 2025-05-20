@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
+CMAKE_SOURCE_DIR = /home/mikestarikov/MetroProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build
+CMAKE_BINARY_DIR = /home/mikestarikov/MetroProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm//CMakeFiles/progress.marks
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles 0
+	cd /home/mikestarikov/MetroProject/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mikestarikov/MetroProject/build/CMakeFiles /home/mikestarikov/MetroProject/build/src/algorithm//CMakeFiles/progress.marks
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikestarikov/MetroProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/clean
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/preinstall
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/preinstall
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mikestarikov/MetroProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/algorithm/CMakeFiles/PathFinder.dir/rule:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/CMakeFiles/PathFinder.dir/rule
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithm/CMakeFiles/PathFinder.dir/rule
 .PHONY : src/algorithm/CMakeFiles/PathFinder.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ PathFinder: src/algorithm/CMakeFiles/PathFinder.dir/rule
 
 # fast build rule for target.
 PathFinder/fast:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/build
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/build
 .PHONY : PathFinder/fast
 
 pathfinder.o: pathfinder.cpp.o
@@ -135,7 +135,7 @@ pathfinder.o: pathfinder.cpp.o
 
 # target to build an object file
 pathfinder.cpp.o:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o
 .PHONY : pathfinder.cpp.o
 
 pathfinder.i: pathfinder.cpp.i
@@ -143,7 +143,7 @@ pathfinder.i: pathfinder.cpp.i
 
 # target to preprocess a source file
 pathfinder.cpp.i:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.i
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.i
 .PHONY : pathfinder.cpp.i
 
 pathfinder.s: pathfinder.cpp.s
@@ -151,7 +151,7 @@ pathfinder.s: pathfinder.cpp.s
 
 # target to generate assembly for a file
 pathfinder.cpp.s:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.s
+	cd /home/mikestarikov/MetroProject/build && $(MAKE) $(MAKESILENT) -f src/algorithm/CMakeFiles/PathFinder.dir/build.make src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.s
 .PHONY : pathfinder.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mikestarikov/MetroProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

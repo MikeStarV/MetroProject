@@ -1,8 +1,86 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <sstream>
+#include <vector>
 #include <string>
+#include <algorithm>
+#include <cctype>
+#include <clocale>
+#include "database/metrodatabase.h"
+#include "model/station.h"
+#include "algorithm/pathfinder.h"
 
+
+
+bool isRussianUpper(const std::string& str, size_t pos) {
+  if (pos + 1 >= str.size()) return false;
+
+  const unsigned char c1 = str[pos];
+  const unsigned char c2 = str[pos+1];
+
+  return (c1 == 0xD0 && c2 >= 0x90 && c2 <= 0x9F) ||
+         (c1 == 0xD0 && c2 >= 0xA0 && c2 <= 0xAF) ||
+         (c1 == 0xD1 && c2 >= 0x80 && c2 <= 0x8F);
+}
+
+void convertRussianUpperToLower(std::string& result, const std::string& str, size_t& pos) {
+  if (pos + 1 >= str.size()) return;
+
+  const unsigned char c1 = str[pos];
+  const unsigned char c2 = str[pos+1];
+
+  if (c1 == 0xD0 && c2 >= 0x90 && c2 <= 0x9F) {
+      result += c1;
+      result += static_cast<char>(c2 + 0x20);
+      pos += 2;
+  }
+  else if (c1 == 0xD0 && c2 >= 0xA0 && c2 <= 0xAF) {
+      result += 0xD1;
+      result += static_cast<char>(c2 - 0x20);
+      pos += 2;
+  }
+  else if (c1 == 0xD0 && c2 == 0x81) {
+      result += 0xD1;
+      result += 0x91;
+      pos += 2;
+  }
+  else {
+      result += str[pos++];
+  }
+}
+
+std::string toLower(const std::string& str) {
+  std::string result;
+  result.reserve(str.size());
+
+  for (size_t i = 0; i < str.size(); ) {
+      unsigned char c = str[i];
+
+      if ((c & 0x80) == 0) {
+          if (c >= 'A' && c <= 'Z') {
+              result += static_cast<char>(c + 32);
+          } else {
+              result += c;
+          }
+          i++;
+      }
+      else if (isRussianUpper(str, i)) {
+          convertRussianUpperToLower(result, str, i);
+      }
+      else {
+          size_t char_len = 1;
+          if ((c & 0xE0) == 0xC0) char_len = 2;
+          else if ((c & 0xF0) == 0xE0) char_len = 3;
+          else if ((c & 0xF8) == 0xF0) char_len = 4;
+
+          for (size_t j = 0; j < char_len && i < str.size(); j++) {
+              result += str[i++];
+          }
+      }
+  }
+
+  return result;
+}
 // Параметры интерфейса
 const float margin = 50.f;
 const float leftPanelWidth = 450.f; // ширина левой панели
@@ -49,6 +127,25 @@ void removeLastUTF8Char(std::string &str) {
   }
   str.erase(pos);
 }
+std::string formatRouteToString(const std::vector<std::string>& path) {
+  std::stringstream ss;
+
+  if (path.empty()) {
+      return "Маршрут не найден";
+  }
+
+  ss << "Кратчайший маршрут (" << path.size()-1 << " переходов): ";
+
+  for (size_t i = 0; i < path.size(); ++i) {
+      ss << path[i];
+      if (i != path.size()-1) {
+          ss << " -> ";
+      }
+  }
+
+  return ss.str();
+}
+
 
 // Функция для обертки текста по ширине с помощью SFML шрифта
 std::string wrapTextToFitWidth(const std::string &text, const sf::Font &font,
@@ -94,6 +191,29 @@ float getTextHeight(const std::string &text, const sf::Font &font,
 }
 
 int main() {
+  MetroDatabase metroDB;
+  if (!metroDB.open("metro.db")) {
+      std::cerr << "Не удалось открыть базу данных" << std::endl;
+      return 1;
+  }
+
+  auto stations = metroDB.loadStations();
+  metroDB.loadConnections(stations);
+
+
+
+  // if (path.empty()) {
+  //     std::cout << "Путь не найден!" << std::endl;
+  // } else {
+  //     std::cout << "Кратчайший маршрут (" << path.size()-1 << " переходов): ";
+  //     for (size_t i = 0; i < path.size(); ++i) {
+  //         std::cout << path[i];
+  //         if (i != path.size()-1) {
+  //             std::cout << " -> ";
+  //         }
+  //     }
+  //     std::cout << std::endl;
+  // }
   sf::RenderWindow window(sf::VideoMode(1350, 800), "Moscow metro");
   window.setFramerateLimit(60);
 
@@ -135,7 +255,6 @@ int main() {
   titleText.setPosition(25, margin);
 
   // Вводные строки
-  std::string stationA, stationB;
   int inputActive = 0; // 0 - ничего, 1 - inputA, 2 - inputB
 
   // Поля ввода
@@ -184,7 +303,7 @@ int main() {
   // Результирующий блок
   const float resultBoxHeight =
       window.getSize().y - (startY + 3 * spacing) - margin;
-  sf::RectangleShape routeResultBox(sf::Vector2f(buttonWidth, resultBoxHeight));
+  sf::RectangleShape routeResultBox(sf::Vector2f(400, resultBoxHeight));
   routeResultBox.setPosition(margin, startY + 3 * spacing);
   routeResultBox.setFillColor(sf::Color::White);
   routeResultBox.setOutlineColor(sf::Color(150, 150, 150));
@@ -207,9 +326,22 @@ int main() {
   inputBText.setFillColor(sf::Color::Black);
 
   sf::Vector2f dragStartMousePos;
+  std::string stationA, stationB;
+
   // Главный цикл окна
   while (window.isOpen()) {
     sf::Event event;
+  std::string lowerStart = toLower(stationA);
+  std::string lowerEnd = toLower(stationB);
+
+  int startId = -1, endId = -1;
+  for (const auto& station : stations) {
+      std::string stationLower = toLower(station.getName());
+      if (stationLower == lowerStart) startId = station.getId();
+      if (stationLower == lowerEnd) endId = station.getId();
+  }
+
+  auto path = PathFinder::findShortestPath(startId, endId, stations);
 
     while (window.pollEvent(event)) {
       if (event.type == sf::Event::Closed)
@@ -287,9 +419,10 @@ int main() {
           inputActive = 2;
         else if (findButton.getGlobalBounds().contains(mousePos)) {
           // Нажали кнопку построения маршрута — выводим текст маршрута
+
           std::string result =
               "Маршрут от " + (stationA.empty() ? "[не указано]" : stationA) +
-              " до " + (stationB.empty() ? "[не указано]" : stationB) + ":";
+              " до " + (stationB.empty() ? "[не указано]" : stationB) + ":" + formatRouteToString(path) + " ";
 
           // Определяем ширину самого длинного слова для динамической ширины
           // окна
@@ -363,6 +496,7 @@ int main() {
             addUnicodeToString(target, event.text.unicode);
           }
         }
+
       }
     }
 
@@ -437,6 +571,7 @@ int main() {
 
     window.display();
   }
+
 
   return 0;
 }

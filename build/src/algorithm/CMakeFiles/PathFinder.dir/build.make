@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
+CMAKE_SOURCE_DIR = /home/mikestarikov/MetroProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build
+CMAKE_BINARY_DIR = /home/mikestarikov/MetroProject/build
 
 # Include any dependencies generated for this target.
 include src/algorithm/CMakeFiles/PathFinder.dir/depend.make
@@ -70,18 +70,18 @@ include src/algorithm/CMakeFiles/PathFinder.dir/progress.make
 include src/algorithm/CMakeFiles/PathFinder.dir/flags.make
 
 src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o: src/algorithm/CMakeFiles/PathFinder.dir/flags.make
-src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o: /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/pathfinder.cpp
+src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o: /home/mikestarikov/MetroProject/src/algorithm/pathfinder.cpp
 src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o: src/algorithm/CMakeFiles/PathFinder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o -MF CMakeFiles/PathFinder.dir/pathfinder.cpp.o.d -o CMakeFiles/PathFinder.dir/pathfinder.cpp.o -c /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/pathfinder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mikestarikov/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o"
+	cd /home/mikestarikov/MetroProject/build/src/algorithm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o -MF CMakeFiles/PathFinder.dir/pathfinder.cpp.o.d -o CMakeFiles/PathFinder.dir/pathfinder.cpp.o -c /home/mikestarikov/MetroProject/src/algorithm/pathfinder.cpp
 
 src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PathFinder.dir/pathfinder.cpp.i"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/pathfinder.cpp > CMakeFiles/PathFinder.dir/pathfinder.cpp.i
+	cd /home/mikestarikov/MetroProject/build/src/algorithm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikestarikov/MetroProject/src/algorithm/pathfinder.cpp > CMakeFiles/PathFinder.dir/pathfinder.cpp.i
 
 src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PathFinder.dir/pathfinder.cpp.s"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm/pathfinder.cpp -o CMakeFiles/PathFinder.dir/pathfinder.cpp.s
+	cd /home/mikestarikov/MetroProject/build/src/algorithm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikestarikov/MetroProject/src/algorithm/pathfinder.cpp -o CMakeFiles/PathFinder.dir/pathfinder.cpp.s
 
 # Object files for target PathFinder
 PathFinder_OBJECTS = \
@@ -93,19 +93,19 @@ PathFinder_EXTERNAL_OBJECTS =
 src/algorithm/libPathFinder.a: src/algorithm/CMakeFiles/PathFinder.dir/pathfinder.cpp.o
 src/algorithm/libPathFinder.a: src/algorithm/CMakeFiles/PathFinder.dir/build.make
 src/algorithm/libPathFinder.a: src/algorithm/CMakeFiles/PathFinder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPathFinder.a"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm && $(CMAKE_COMMAND) -P CMakeFiles/PathFinder.dir/cmake_clean_target.cmake
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PathFinder.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mikestarikov/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPathFinder.a"
+	cd /home/mikestarikov/MetroProject/build/src/algorithm && $(CMAKE_COMMAND) -P CMakeFiles/PathFinder.dir/cmake_clean_target.cmake
+	cd /home/mikestarikov/MetroProject/build/src/algorithm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PathFinder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/algorithm/CMakeFiles/PathFinder.dir/build: src/algorithm/libPathFinder.a
 .PHONY : src/algorithm/CMakeFiles/PathFinder.dir/build
 
 src/algorithm/CMakeFiles/PathFinder.dir/clean:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm && $(CMAKE_COMMAND) -P CMakeFiles/PathFinder.dir/cmake_clean.cmake
+	cd /home/mikestarikov/MetroProject/build/src/algorithm && $(CMAKE_COMMAND) -P CMakeFiles/PathFinder.dir/cmake_clean.cmake
 .PHONY : src/algorithm/CMakeFiles/PathFinder.dir/clean
 
 src/algorithm/CMakeFiles/PathFinder.dir/depend:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/algorithm /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/algorithm/CMakeFiles/PathFinder.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mikestarikov/MetroProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mikestarikov/MetroProject /home/mikestarikov/MetroProject/src/algorithm /home/mikestarikov/MetroProject/build /home/mikestarikov/MetroProject/build/src/algorithm /home/mikestarikov/MetroProject/build/src/algorithm/CMakeFiles/PathFinder.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/algorithm/CMakeFiles/PathFinder.dir/depend
 

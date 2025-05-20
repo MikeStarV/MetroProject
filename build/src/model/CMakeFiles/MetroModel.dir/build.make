@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject
+CMAKE_SOURCE_DIR = /home/mikestarikov/MetroProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build
+CMAKE_BINARY_DIR = /home/mikestarikov/MetroProject/build
 
 # Include any dependencies generated for this target.
 include src/model/CMakeFiles/MetroModel.dir/depend.make
@@ -70,18 +70,18 @@ include src/model/CMakeFiles/MetroModel.dir/progress.make
 include src/model/CMakeFiles/MetroModel.dir/flags.make
 
 src/model/CMakeFiles/MetroModel.dir/station.cpp.o: src/model/CMakeFiles/MetroModel.dir/flags.make
-src/model/CMakeFiles/MetroModel.dir/station.cpp.o: /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/station.cpp
+src/model/CMakeFiles/MetroModel.dir/station.cpp.o: /home/mikestarikov/MetroProject/src/model/station.cpp
 src/model/CMakeFiles/MetroModel.dir/station.cpp.o: src/model/CMakeFiles/MetroModel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/model/CMakeFiles/MetroModel.dir/station.cpp.o"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/model/CMakeFiles/MetroModel.dir/station.cpp.o -MF CMakeFiles/MetroModel.dir/station.cpp.o.d -o CMakeFiles/MetroModel.dir/station.cpp.o -c /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/station.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mikestarikov/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/model/CMakeFiles/MetroModel.dir/station.cpp.o"
+	cd /home/mikestarikov/MetroProject/build/src/model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/model/CMakeFiles/MetroModel.dir/station.cpp.o -MF CMakeFiles/MetroModel.dir/station.cpp.o.d -o CMakeFiles/MetroModel.dir/station.cpp.o -c /home/mikestarikov/MetroProject/src/model/station.cpp
 
 src/model/CMakeFiles/MetroModel.dir/station.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MetroModel.dir/station.cpp.i"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/station.cpp > CMakeFiles/MetroModel.dir/station.cpp.i
+	cd /home/mikestarikov/MetroProject/build/src/model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikestarikov/MetroProject/src/model/station.cpp > CMakeFiles/MetroModel.dir/station.cpp.i
 
 src/model/CMakeFiles/MetroModel.dir/station.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MetroModel.dir/station.cpp.s"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model/station.cpp -o CMakeFiles/MetroModel.dir/station.cpp.s
+	cd /home/mikestarikov/MetroProject/build/src/model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikestarikov/MetroProject/src/model/station.cpp -o CMakeFiles/MetroModel.dir/station.cpp.s
 
 # Object files for target MetroModel
 MetroModel_OBJECTS = \
@@ -93,19 +93,19 @@ MetroModel_EXTERNAL_OBJECTS =
 src/model/libMetroModel.a: src/model/CMakeFiles/MetroModel.dir/station.cpp.o
 src/model/libMetroModel.a: src/model/CMakeFiles/MetroModel.dir/build.make
 src/model/libMetroModel.a: src/model/CMakeFiles/MetroModel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMetroModel.a"
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model && $(CMAKE_COMMAND) -P CMakeFiles/MetroModel.dir/cmake_clean_target.cmake
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MetroModel.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mikestarikov/MetroProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMetroModel.a"
+	cd /home/mikestarikov/MetroProject/build/src/model && $(CMAKE_COMMAND) -P CMakeFiles/MetroModel.dir/cmake_clean_target.cmake
+	cd /home/mikestarikov/MetroProject/build/src/model && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MetroModel.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/model/CMakeFiles/MetroModel.dir/build: src/model/libMetroModel.a
 .PHONY : src/model/CMakeFiles/MetroModel.dir/build
 
 src/model/CMakeFiles/MetroModel.dir/clean:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model && $(CMAKE_COMMAND) -P CMakeFiles/MetroModel.dir/cmake_clean.cmake
+	cd /home/mikestarikov/MetroProject/build/src/model && $(CMAKE_COMMAND) -P CMakeFiles/MetroModel.dir/cmake_clean.cmake
 .PHONY : src/model/CMakeFiles/MetroModel.dir/clean
 
 src/model/CMakeFiles/MetroModel.dir/depend:
-	cd /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/src/model /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model /home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/build/src/model/CMakeFiles/MetroModel.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mikestarikov/MetroProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mikestarikov/MetroProject /home/mikestarikov/MetroProject/src/model /home/mikestarikov/MetroProject/build /home/mikestarikov/MetroProject/build/src/model /home/mikestarikov/MetroProject/build/src/model/CMakeFiles/MetroModel.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/model/CMakeFiles/MetroModel.dir/depend
 

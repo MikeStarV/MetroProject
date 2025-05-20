@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pavel/BAUMAN_PROJECTS/CS-2025-PR/MetroProject/include/model
+CXX_INCLUDES = -I/home/mikestarikov/MetroProject/include/model
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -std=gnu++17
 

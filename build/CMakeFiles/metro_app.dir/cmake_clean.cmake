@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/metro_app.dir/main.cpp.o"
-  "CMakeFiles/metro_app.dir/main.cpp.o.d"
+  "CMakeFiles/metro_app.dir/mainUi.cpp.o"
+  "CMakeFiles/metro_app.dir/mainUi.cpp.o.d"
   "metro_app"
   "metro_app.pdb"
 )
